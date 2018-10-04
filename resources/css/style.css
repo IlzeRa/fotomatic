@@ -422,7 +422,6 @@ header .mobile-content{
   max-width: 100%;
   padding: 0 1%;
   display: flex;
-
     }
 
   #filters-section .images-container img{
@@ -455,6 +454,14 @@ header .mobile-content{
   }
 }
 
+@media only screen and (max-width: 450px) {
+
+    #filters-section .extra {
+      display: none;
+    }
+  }
+
+}
 /* Quotes Section */
 
 #quotes-section {
@@ -500,6 +507,25 @@ header .mobile-content{
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #quotes-section .content {
+    padding: 1.875rem .625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+      }
+
+  #quotes-section span {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    }
+
+  #quotes-section img {
+    margin-top: 1.5rem;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -522,8 +548,8 @@ footer .copyright {
   footer .content {
     font-size: .625rem;
   }
+
   footer{
     margin: 0;
   }
-
-  }
+}
